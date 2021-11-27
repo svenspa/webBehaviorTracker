@@ -1,8 +1,9 @@
 name: webBehaviorTracker
 channels:
-  - conda-forge
   - defaults
+  - conda-forge
 dependencies:
   - python=3.8
   - pandas=1.3.4
-prefix: C:\Users\Roy\miniconda3\envs\webBehaviorTracker
+  - flask=2.0.2
+prefix: /opt/anaconda3/envs/webBehaviorTracker
