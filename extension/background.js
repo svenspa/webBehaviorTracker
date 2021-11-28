@@ -2,6 +2,18 @@
 * Highly recommend https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/tabs/onUpdated
 * */
 
+// https://stackoverflow.com/questions/16338582/python-code-from-javascript-using-ajax
+// https://stackoverflow.com/questions/11703660/ajax-request-to-python-script
+$.ajax({
+    type:"GET",
+    url:"/myAPI",
+    contentType:"application/json; charset=utf-8",
+    success:function (data) {     
+    },
+    failure:function (errMsg) {
+    }
+});
+
 chrome.tabs.onActivated.addListener(function (activeInfo) { //addListener is Deprecated
     //This function is used when you start or open a new tab
     chrome.tabs.get(activeInfo.tabId, function (tab) {
